@@ -16,8 +16,6 @@ def index(request):
 
     alumnos = Alumno.objects.all()
 
-    alumn = Alumnos.objects.raw('')
-
     context={"hijo":hijo, "nombre":"Claudia Andrea", "comidas":lista, "alumnos":alumnos}
 
     return render(request, 'alumnos/index.html', context)
